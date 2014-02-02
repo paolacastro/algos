@@ -20,7 +20,7 @@ class stack:
 
 class queue:
     """
-    last in / first out
+    first in / first out
     """
     def __init__(self,array=[]):
         self.stack = stack(array)
