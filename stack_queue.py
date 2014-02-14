@@ -7,10 +7,7 @@ class stack:
         pass
 
     def get_element(self):
-        first_item =  self.s[0]
-        self.s.pop(0)
-        return first_item
-
+        return self.s.pop()
     def add_element(self,element):
         self.s.append(element)
 
@@ -73,18 +70,30 @@ class queue:
 
 def main():
 
-    print 'stack'
-    stack_obj = stack([1,2,3,4,5,6])
-    stack_obj.unload_stack()
-    print 'queue menthod 1'
-    #stack_obj = stack([1,2,3,4,5,6])
-    #queue_obj = queue()
-    #queue_obj.unload_queue(stack_obj)
-    print 'queue method 2'
-    queue_obj = queue([1,2,3,4,5,6])
-    print queue_obj.get_element()
-    queue_obj.add_element(0)
-    print queue_obj.get_element()
+#    print 'stack'
+#    stack_obj = stack([1,2,3,4,5,6])
+#    stack_obj.unload_stack()
+#    print 'queue menthod 1'
+#    #stack_obj = stack([1,2,3,4,5,6])
+#    #queue_obj = queue()
+#    #queue_obj.unload_queue(stack_obj)
+#    print 'queue method 2'
+#    queue_obj = queue([1,2,3,4,5,6])
+#    print queue_obj.get_element()
+#    queue_obj.add_element(0)
+#    print queue_obj.get_element()
+    
+    stacko = stack()
+    stacko.add_element(1)
+    print stacko.s
+    stacko.add_element(2)
+    print stacko.s
+    stacko.add_element(3)
+    print stacko.s
+    print stacko.get_element()
+    print stacko.get_element()
+    print stacko.get_element()
+    
     
 
 
